@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples de Área e Custo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora Simples de Área e Custo</h1>
+
+        <div class="section">
+            <h2>Área Sala</h2>
+            <label for="larguraSala">Largura (m):</label>
+            <input type="number" id="larguraSala" class="input" oninput="calcularAreaECusto('larguraSala', 'comprimentoSala', 'resultadoSala')" placeholder="0">
+            <br>
+            <label for="comprimentoSala">Comprimento (m):</label>
+            <input type="number" id="comprimentoSala" class="input" oninput="calcularAreaECusto('larguraSala', 'comprimentoSala', 'resultadoSala')" placeholder="0">
+            <p id="resultadoSala" class="resultado">Área: 0 m². Custo: R$ 0.</p>
+        </div>
+
+        <div class="section">
+            <h3>Área Cozinha</h3>
+            <label for="larguraCozinha">Largura (m):</label>
+            <input type="number" id="larguraCozinha" class="input" oninput="calcularAreaECusto('larguraCozinha', 'comprimentoCozinha', 'resultadoCozinha')" placeholder="0">
+            <br>
+            <label for="comprimentoCozinha">Comprimento (m):</label>
+            <input type="number" id="comprimentoCozinha" class="input" oninput="calcularAreaECusto('larguraCozinha', 'comprimentoCozinha', 'resultadoCozinha')" placeholder="0">
+            <p id="resultadoCozinha" class="resultado">Área: 0 m². Custo: R$ 0.</p>
+        </div>
+
+        <h2>Total Geral</h2>
+        <p id="resultadoTotal" class="resultado-total">Área Total: 0 m². Custo Total: R$ 0.</p>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Milton</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
